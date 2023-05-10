@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+const Button = () => <button>Aceptar</button>
 
-function App() {
+export default function App() {
+const screem = () => alert("Don't touch the text :(")
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <form>
+      {
+        ["name","lastname","age"].map(name => <><label>{name}<input type="text" name={name} /></label><Button/></>)
+      }
+      <h1 onClick={screem} className="alert">Don't touch me</h1>
+    </form>
+  )
 }
-
-export default App;
