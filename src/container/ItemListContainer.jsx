@@ -1,10 +1,13 @@
 import React from "react";
+import Container from 'react-bootstrap/Container';
 
 const ItemListContainer = ({greeting}) =>{
     return(
-        <div>
-            {greeting}
-        </div>
+        <Container className="mt-4">
+            <div>
+                {greeting}
+            </div>
+        </Container>
     )
 } 
 

@@ -1,6 +1,8 @@
 /*const Button = () => <button>Aceptar</button>*/
 import ItemListContainer from "./container/ItemListContainer";
 import NavBar from "./components/NavBar";
+import Counter from "./components/Counter";
+import "./App.css";
 
 export default function App() {
 /*const screem = () => alert("Don't touch the text :(")*/
@@ -10,6 +12,7 @@ export default function App() {
     <div className="container">
       <NavBar/>
       <ItemListContainer greeting={"Welcome to IPET"}/>
+      <Counter/>
     </div>
 
    /* <form>
