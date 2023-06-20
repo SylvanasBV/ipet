@@ -1,15 +1,14 @@
 /*const Button = () => <button>Aceptar</button>*/
-import ItemListContainer from "./container/ItemListContainer";
-import NavBar from "./components/NavBar";
-import Counter from "./components/Counter";
+import {ItemListContainer} from "./container/ItemListContainer";
+import {NavBar} from "./components/NavBar";
+import {Counter} from "./components/Counter";
 import "./App.css";
 
 export default function App() {
 /*const screem = () => alert("Don't touch the text :(")*/
 
   return (
-
-    <div className="container">
+    <div>
       <NavBar/>
       <ItemListContainer greeting={"Welcome to IPET"}/>
       <Counter/>
@@ -21,5 +20,5 @@ export default function App() {
     }
     <h1 onClick={screem} className="alert">Don't touch me</h1>
     </form>*/
-  )
-}
+  );
+};

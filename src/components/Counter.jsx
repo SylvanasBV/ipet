@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Badge from 'react-bootstrap/Badge';
 
-const Counter = () => {
+export const Counter = () => {
     const stockDisponible = 4;
     const stockMinimoDisponible = 1;
 
@@ -23,7 +23,5 @@ const Counter = () => {
             <button onClick={handlerDecreaseCount}>➖</button>
         </Badge>
     </>
-    )
-}
-
-export default Counter;
+    );
+};

@@ -1,28 +1,37 @@
 import React from "react";
-import CarWidget from "./CarWidget";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import 'bootstrap/dist/css/bootstrap.min.css';
- 
-const NavBar = () =>{
+import icon from "../img/icon.png"
+import {CarWidget} from "./CarWidget";
+import {Container} from "./Container";
+//import styled from "styled-components";
+import "../App.css"
+
+
+export const NavBar = () =>{
     return(
         <header>
-          <Navbar bg="dark" variant="dark">
-            <Container>
-                <Navbar.Brand href="#home">IHELP</Navbar.Brand>
-                <Nav className="me-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#Toys">Toys</Nav.Link>
-                    <Nav.Link href="#Dog_Food">Dog Food</Nav.Link>
-                    <Nav.Link href="#Weather">Weather</Nav.Link>
-                    <Nav.Link href="#Healt">Healt</Nav.Link>
-                </Nav>
-                <CarWidget contador={0}/>
-            </Container>
-          </Navbar>
+          <nav className= "navbar container">
+              <section className = "navbar__logo"> 
+                <a className="navbar__link" href="#top">
+                  <img src={icon} alt="Tienda Ipet logo"/>
+                </a>
+                <p className="navbar__name">Shop IPET</p>
+              </section>
+              <ul className="menu">
+                <li className="menu__item">
+                    <a className="menu__link" href="./index.html">HOME</a>
+                </li>
+                <li className="menu__item">
+                    <a className="menu__link" href="./ihelp.html">#IHELP</a>
+                </li>
+                <li className="menu__item">
+                    <a className="menu__link" href="./shop.html">SHOP</a>
+                </li>
+                <li className="menu__item">
+                    <a className="menu__link" href="./contact_us.html">CONTACT US</a>
+                </li>
+              </ul>
+              <CarWidget  contador={0}/>
+          </nav>
         </header>
-    )
-} 
-
-export default NavBar;
+    );
+};
