@@ -1,7 +1,6 @@
 import React from "react";
 import icon from "../img/icon.png"
 import {CarWidget} from "./CarWidget";
-import {Container} from "./Container";
 //import styled from "styled-components";
 import "../App.css"
 

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Badge from 'react-bootstrap/Badge';
+import { CarWidget } from './CarWidget';
 
 export const Counter = () => {
     const stockDisponible = 4;
@@ -14,6 +15,9 @@ export const Counter = () => {
     const handlerDecreaseCount = () => {
         if (counter > stockMinimoDisponible) setCounter(counter - 1);
     };
+    const onAdd = () => {
+        <CarWidget contador={counter}/>
+    }
     
    return(
     <>
@@ -22,6 +26,8 @@ export const Counter = () => {
             {counter}
             <button onClick={handlerDecreaseCount}>➖</button>
         </Badge>
+            <button onClick={onAdd}>onAdd</button>
+
     </>
     );
 };

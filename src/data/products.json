@@ -1,0 +1,51 @@
+[{
+    "id": 1,
+    "Food_Name": "Juice - Tomato, 48 Oz",
+    "cost": "$1.60",
+    "Stock": 1
+  }, {
+    "id": 2,
+    "Food_Name": "Spice - Greek 1 Step",
+    "cost": "$3.63",
+    "Stock": 2
+  }, {
+    "id": 3,
+    "Food_Name": "Tea - Herbal I Love Lemon",
+    "cost": "$6.65",
+    "Stock": 3
+  }, {
+    "id": 4,
+    "Food_Name": "Brandy - Orange, Mc Guiness",
+    "cost": "$4.29",
+    "Stock": 4
+  }, {
+    "id": 5,
+    "Food_Name": "Lamb - Loin Chops",
+    "cost": "$1.79",
+    "Stock": 5
+  }, {
+    "id": 6,
+    "Food_Name": "Cabbage Roll",
+    "cost": "$2.46",
+    "Stock": 6
+  }, {
+    "id": 7,
+    "Food_Name": "Rappini - Andy Boy",
+    "cost": "$5.39",
+    "Stock": 7
+  }, {
+    "id": 8,
+    "Food_Name": "Leeks - Baby, White",
+    "cost": "$5.33",
+    "Stock": 8
+  }, {
+    "id": 9,
+    "Food_Name": "Beef - Tenderloin - Aa",
+    "cost": "$4.22",
+    "Stock": 9
+  }, {
+    "id": 10,
+    "Food_Name": "Spinach - Baby",
+    "cost": "$1.60",
+    "Stock": 10
+  }]
